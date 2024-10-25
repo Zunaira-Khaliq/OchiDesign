@@ -1,5 +1,4 @@
 import { motion, useAnimation } from 'framer-motion'
-import { Power4 } from 'gsap';
 import React from 'react'
 import {useState } from "react";
 
