@@ -1,6 +1,10 @@
 import React from 'react'
+import Image from 'next/image'
 
 function About() {
+
+  const imageUrl = "https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg"
+
   return (
     <div className='w-full p-20 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl text-black'>
         <h1 className='font-["Neue_Montreal"] leading-[4.5vw] text-[4vw] tracking-tight'>Ochi is a strategic presentation agency for forward-thinking businesses that need to raise funds, sell products, explain complex ideas, and hire great people.</h1>
@@ -11,8 +15,10 @@ function About() {
                 <div className='w-2 h-2 bg-zinc-100 rounded-full'></div>
             </button>
             </div>
-            <div className='w-1/2 h-[70vh] overflow-hidden rounded-3xl bg-[#879745]'>
-               <img src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg" alt="" />
+            <div className='w-1/2  overflow-hidden rounded-3xl bg-[#879745]'>
+               <img
+              src={imageUrl}
+              alt="About amage" />
             </div>
          </div>
     </div>

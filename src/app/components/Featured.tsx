@@ -1,5 +1,6 @@
 import { motion, useAnimation } from 'framer-motion'
 import React from 'react'
+import Image from 'next/image';
 
 function Featured() {
     const cards = [useAnimation(), useAnimation()];
@@ -11,6 +12,9 @@ function Featured() {
     const handleHoverEnd =(index: number)=>{
         cards[index].start({y: "100%"})
     }
+
+    const card1Url = "https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png";
+    const card2Url = "https://ochi.design/wp-content/uploads/2022/09/Vise_front2-663x551.jpg";
 
   return (
     <div className='w-full py-20'>
@@ -35,7 +39,10 @@ function Featured() {
                     >{item}</motion.span>
                     )}
                     </h1>
-                        <img className='w-full h-full bg-cover' src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png" alt="" />
+                        <img 
+                        className='w-full h-full bg-cover' 
+                        src={card1Url}
+                        alt="img1"/>
                     </div>
                 </motion.div>
                 <motion.div
@@ -54,7 +61,10 @@ function Featured() {
                     >{item}</motion.span>
                     )}
                     </h1>
-                        <img className='w-full h-full bg-cover' src="https://ochi.design/wp-content/uploads/2022/09/Vise_front2-663x551.jpg" alt="" />
+                        <img 
+                        className='w-full h-full bg-cover' 
+                        src={card2Url}
+                        alt="img2"/>
                     </div>
                 </motion.div>
 

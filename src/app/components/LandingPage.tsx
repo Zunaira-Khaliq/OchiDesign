@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion';
 import React from 'react'
 import { FaArrowUpLong } from "react-icons/fa6";
+import Image from 'next/image';
 
 function LandingPage() {
+
+    const imgurl = "https://media.istockphoto.com/id/1281026029/photo/illustration-of-man-walking-on-penrose-triangle-surreal-concept.jpg?s=1024x1024&w=is&k=20&c=oVytR-y025ePXt037uAR-CIaHZsxzqJ0wZVuHKrrQiU=";
+
   return (
     <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full h-screen bg-zinc-900 pt-1'>
         <div className='textstructure mt-[12vw] px-20'>
@@ -14,7 +18,10 @@ function LandingPage() {
                         animate={{width: "8vw"}} 
                         transition={{ease:[0.76, 0, 0.24, 1], duration: 1}}
                         className=' mr-[1vw] w-[8vw]  h-[5.2vw] -top-[1vw] relative'>
-                             <img className='rounded-md ' src="https://media.istockphoto.com/id/1281026029/photo/illustration-of-man-walking-on-penrose-triangle-surreal-concept.jpg?s=1024x1024&w=is&k=20&c=oVytR-y025ePXt037uAR-CIaHZsxzqJ0wZVuHKrrQiU=" alt="" />
+                             <img
+                             className='rounded-md ' 
+                             src={imgurl} 
+                             alt="heading"/>
                         </motion.div>)}
                 <h1 className="pt-[2vw] -mb-[1vw] font-semibold uppercase text-[8vw] leading-[.75] font-['Founders_Grotesk_X_Condensed']">{item}</h1>
             </div>
