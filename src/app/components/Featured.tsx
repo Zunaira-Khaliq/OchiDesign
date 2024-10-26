@@ -4,11 +4,11 @@ import React from 'react'
 function Featured() {
     const cards = [useAnimation(), useAnimation()];
 
-    const handleHover =(index: any)=>{
+    const handleHover =(index: number)=>{
         cards[index].start({y: "0"})
     }
 
-    const handleHoverEnd =(index: any)=>{
+    const handleHoverEnd =(index: number)=>{
         cards[index].start({y: "100%"})
     }
 

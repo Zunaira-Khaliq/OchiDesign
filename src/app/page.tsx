@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import Marquee from './components/Marquee';
@@ -11,6 +11,19 @@ import Footer from './components/Footer';
 import LocomotiveScroll from 'locomotive-scroll';
 
 function page() {
+
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const locomotiveScroll = new LocomotiveScroll({
+      el: scrollRef.current,
+      smooth: true,
+    }as any);
+
+    return () => {
+      locomotiveScroll.destroy();
+    };
+  }, []);
  
 
     const locomotiveScroll = new LocomotiveScroll();

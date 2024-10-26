@@ -14,7 +14,7 @@ function Eyes() {
              const deltaX = mouseX - window.innerWidth/2;
              const deltaY = mouseY - window.innerHeight/2;
 
-             let angle = Math.atan2(deltaX, deltaY) * (180/Math.PI);
+             const angle = Math.atan2(deltaX, deltaY) * (180/Math.PI);
              setRotate(angle-180);
         })
     })
