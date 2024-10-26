@@ -7,7 +7,7 @@ function LandingPage() {
     <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full h-screen bg-zinc-900 pt-1'>
         <div className='textstructure mt-[12vw] px-20'>
             {["We Create", "Eye Opening", "Presentations"].map((item, index)=>(
-                <div className='masker'>
+                <div key={index} className='masker'>
                     <div className='w-fit flex items-end overflow-hidden'>
                         {index === 1 && (<motion.div 
                         initial={{width: 0}} 
@@ -25,7 +25,7 @@ function LandingPage() {
         </div>
         <div className='border-t-[1px] border-zinc-800 mt-[4vw] flex justify-between items-center py-4 px-20'>
             {["For public and private companies", "From the first pitch to IPO"].map((item, index)=>
-            <p className='text-md font-light font-["Founders_Grotesk_X-Condensed"]'>{item}</p>
+            <p key={index} className='text-md font-light font-["Founders_Grotesk_X-Condensed"]'>{item}</p>
             )}
             <div className='flex gap-3'>
             <div className='start flex items-center gap-5'>

@@ -21,14 +21,14 @@ function Footer() {
         </h1>
         <div className='flex flex-row'>
         <div className='mt-0'>
-            {["S :", "Instagram", "Behance", "Facebook", "LinkedIn", "L :","202-1965 W 4th Ave", "Vancouver, Canada", "30 Chukarina St", "Lviv, Ukraine", "E :", "hello@ochidesign"].map((item, index)=>(
-                <a key={index} className={`dets font-["Neue Montreal"] block text-2xl underline-offset-1 font-light ${index === 0 && 'mb-1'} ${index === 5 && 'mt-4'} ${index === 5 && 'mb-5'}  ${index === 10  && 'mt-4'} ${index === 10 && 'mb-3'} `}>{item}</a>
+            {["S :", "Instagram", "Behance", "Facebook", "LinkedIn", "L :","202-1965 W 4th Ave", "Vancouver, Canada", "30 Chukarina St", "Lviv, Ukraine", "E :", "hello@ochidesign"].map((item, num)=>(
+                <a key={num} className={`dets font-["Neue Montreal"] block text-2xl underline-offset-1 font-light ${num === 0 && 'mb-1'} ${num === 5 && 'mt-4'} ${num === 5 && 'mb-5'}  ${num === 10  && 'mt-4'} ${num === 10 && 'mb-3'} `}>{item}</a>
             ))}
         </div>
            
         <div className='mt-36 ml-96'>
-            {[, "M :","Home", "Services", "Our Work", "About Us", "Insights", "Contact Us"].map((item, index)=>(
-                <a key={index} className='dets font-["Neue Montreal"] block text-2xl underline-offset-1 font-light'>{item}</a>
+            {[, "M :","Home", "Services", "Our Work", "About Us", "Insights", "Contact Us"].map((item, Mnum)=>(
+                <a key={Mnum} className='dets font-["Neue Montreal"] block text-2xl underline-offset-1 font-light'>{item}</a>
             ))}
         </div>
         </div>

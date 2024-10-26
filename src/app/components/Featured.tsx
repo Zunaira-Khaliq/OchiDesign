@@ -26,7 +26,8 @@ function Featured() {
                     <div className='card w-full h-full rounded-xl overflow-hidden '>
                     <h1 className='absolute flex overflow-hidden text-[#CDEA68] left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tight font-["Founders_Grotesk_X_Condensed"] text-9xl'>
                     {"FYDE".split('').map((item, index)=>
-                    <motion.span 
+                    <motion.span
+                    key={index} 
                     initial={{y: "100%"}} 
                     animate={cards[0]} 
                     transition={{ease: [0.21, 1, 0.36, 1], delay: index*.05}}
@@ -44,7 +45,8 @@ function Featured() {
                     <div className='card w-full h-full rounded-xl overflow-hidden'>
                     <h1 className='absolute flex overflow-hidden text-[#CDEA68] right-full top-1/2 -mr-3 -translate-y-1/2 z-[9] leading-none  font-["Founders_Grotesk_X_Condensed"] text-9xl'>
                     {"VISE".split('').map((item, index)=>
-                    <motion.span 
+                    <motion.span
+                    key={index} 
                     initial={{y: "100%"}} 
                     animate={cards[1]} 
                     transition={{ease: [0.21, 1, 0.36, 1], delay: index*.05}}
